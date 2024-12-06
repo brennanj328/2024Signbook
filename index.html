@@ -99,7 +99,10 @@ late by working </p>
         var XiaolongClick = function(){
           XiaolongEL.style.color = "blue";
           XiaolongEL.textContent = "You Clicked me!"
-          setTimeout(function() {XiaolongEL.textContent = "Xiaolong Cong(Click me)"}, 2000);
+          setTimeout(function() 
+{XiaolongEL.textContent = "Xiaolong Cong(Click me)";
+            XiaolongEL.style.color = "black";
+          }, 2000);
         }
         XiaolongEL.addEventListener("click",XiaolongClick);
         document.body.style.backgroundColor = "white";
