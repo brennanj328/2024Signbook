@@ -95,8 +95,14 @@ late by working </p>
         <p>style="color:MediumBlue;border:5px double dashed Red;">Cyrus Kaneshi$
         <p>Mr. Cazinha</p>
         <script>
+        var XiaolongEL = document.getElementById("name");
+        var XiaolongClick = function(){
+          XiaolongEL.style.color = "blue";
+          XiaolongEL.textContent = "You Clicked me!"
+          setTimeout(function() {XiaolongEL.textContent = "Xiaolong Cong(Click me)"}, 2000);
+        }
+        XiaolongEL.addEventListener("click",XiaolongClick);
         document.body.style.backgroundColor = "white";
         </script>
   </body>
 </html>
-
