@@ -24,9 +24,9 @@
        	drop-shadow: 2em 2em; 
 	}
      #name{
-                color: blue green;
-                font-family: "Verdana";
-                font-size:30px;
+                background-color: white;
+                font-family: "verdana";
+                font-size:47.5px;
                 text-shadow: 1px 1px;
         }
 
@@ -204,6 +204,8 @@ late by working</i> </p>
 <h1 class="koyb">Koby Vuong</h1>    
     <p class="koyb">I like cheese</p>
 	<p>Sammie Ikeda</p>    
+        
+
 <p id="ty" >Tylenol johnson jr </p>
 <p class= "jacob">Jacob Tong</p>
     <L1 class="david">D</L1>
@@ -216,6 +218,30 @@ Kaneshiro</p>
 	<p id = "MrC">Mr. Cazinha</p>   
     <p> Vito </p>
 <p id="tim">Tim Lorge </p>    
+<script>
+        var XiaolongEL = document.getElementById("name");
+        var XiaolongClick = function(){
+          XiaolongEL.style.color = "blue";
+          XiaolongEL.textContent = "You Clicked me!"
+          setTimeout(function() 
+{XiaolongEL.textContent = "Xiaolong Cong(Click me)";
+            XiaolongEL.style.color = "black";
+          }, 2000);
+        }
+	var k = 0;
+        XiaolongEL.addEventListener("click",XiaolongClick);
+	var changeTheText = function(){
+		if(parseInt(XiaolongEL.style.fontSize) < 47.5){
+			k++;
+			XiaolongEL.style.fontSize = 47.5+k/2+"px"
+		}
+		else{
+			k--;
+			XiaolongEL.style.fontSize = 47.5+k/2+"px"
+		}
+	}
+	window.setInterval(changeTheText,100);
+        document.body.style.backgroundColor = "white";
+        </script>
   </body>
 </html>
-
